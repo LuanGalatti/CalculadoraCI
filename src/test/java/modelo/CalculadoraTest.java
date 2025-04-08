@@ -17,7 +17,7 @@ class CalculadoraTest {
     }
 
     /**
-     * Test of getSoma method with a empty constructor, of class Calculadora.
+     * Teste do método getSoma com um construtor vazio.
      */
     @Test
     void testGetSomaConstrutorVazio() {
@@ -28,7 +28,7 @@ class CalculadoraTest {
     }
 
     /**
-     * Test of getSoma method, of class Calculadora.
+     * Teste do método getSoma.
      */
     @Test
     void testGetSoma() {
@@ -38,7 +38,7 @@ class CalculadoraTest {
     }
 
     /**
-     * Test of getDiferenca method, of class Calculadora.
+     * Teste do método getDiferenca.
      */
     @Test
     void testGetDiferenca() {
@@ -49,7 +49,7 @@ class CalculadoraTest {
     }
 
     /**
-     * Test of getProduto method, of class Calculadora.
+     * Teste do método getProduto.
      */
     @Test
     void testGetProduto() {
@@ -60,7 +60,7 @@ class CalculadoraTest {
     }
 
     /**
-     * Test of getQuociente method, of class Calculadora.
+     * Teste do método getQuociente.
      */
     @Test
     void testGetQuociente() {
@@ -71,7 +71,7 @@ class CalculadoraTest {
     }
 
     /**
-     * Test of getExponencial method, of class Calculadora.
+     * Teste do método getExponencial.
      */
     @Test
     void testGetExponencial() {
