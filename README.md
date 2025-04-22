@@ -1,7 +1,7 @@
 # CalculadoraCI
 ## Sobre o projeto:
 Esse projeto tem como objetivo utilizar integração continua para verificar se novas atualizações estão funcionando corretamente. 
-
+ 
 ## Tecnologias utilizadas:
 O projeto utiliza Java. \
 O projeto foi desenvolivido no NetBeans 21. \
