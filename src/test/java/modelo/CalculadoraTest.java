@@ -46,6 +46,18 @@ class CalculadoraTest {
         double result = instance.getDiferenca();
         assertEquals(expResult, result, 0);
     }
+    
+        @Test
+    void testGetDivisao() {
+        //Instancia um objeto da classe Calculadora
+        Calculadora calculadora = new Calculadora(4.0, 2.0);
+        //Define o valor esperado para a operação
+        double retornoEsperado = 2.0;
+        //Chama a operacao getDivisao()
+        double retornoFeito = calculadora.getQuociente();
+        //Premissa verifica se os valores são iguais	
+        assertEquals(retornoEsperado, retornoFeito);
+    }
 
     @AfterAll
     public void finalizacao() {
