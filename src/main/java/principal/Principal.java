@@ -29,6 +29,7 @@ public class Principal {
                     break;
                 case 6:
                     JOptionPane.showMessageDialog(null, "Exponente: " + calculadora.getExponencial());
+                    break;
                 default:
                     break;
             }
