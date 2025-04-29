@@ -9,11 +9,11 @@ import org.junit.jupiter.api.TestInstance;
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class CalculadoraTest {
 
-    Calculadora instance;
+    calculadora instance;
 
     @BeforeAll
     void inicializacao() {
-        instance = new Calculadora(4.0, 2.0);
+        instance = new calculadora(4.0, 2.0);
     }
 
     /**
@@ -21,7 +21,7 @@ class CalculadoraTest {
      */
     @Test
     void testGetSomaConstrutorVazio() {
-        Calculadora calculadora = new Calculadora();
+        calculadora calculadora = new calculadora();
         double expResult = 0.0;
         double result = calculadora.getSoma();
         assertEquals(expResult, result, 0);
@@ -50,7 +50,7 @@ class CalculadoraTest {
         @Test
     void testGetDivisao() {
         //Instancia um objeto da classe Calculadora
-        Calculadora calculadora = new Calculadora(4.0, 2.0);
+        calculadora calculadora = new calculadora(4.0, 2.0);
         //Define o valor esperado para a operação
         double retornoEsperado = 2.0;
         //Chama a operacao getDivisao()
@@ -62,7 +62,7 @@ class CalculadoraTest {
     @Test
     void testProduto() {
         //Instancia um objeto da classe Calculadora
-        Calculadora calculadora = new Calculadora(2.0, 2.0);
+        calculadora calculadora = new calculadora(2.0, 2.0);
         //Define o valor esperado para a operação
         double retornoEsperado = 4.0;
         //Chama a operacao getDivisao()
@@ -74,7 +74,7 @@ class CalculadoraTest {
         @Test
     void testExponencial() {
         //Instancia um objeto da classe Calculadora
-        Calculadora calculadora = new Calculadora(2.0, 3.0);
+        calculadora calculadora = new calculadora(2.0, 3.0);
         //Define o valor esperado para a operação
         double retornoEsperado = 8.0;
         //Chama a operacao getDivisao()

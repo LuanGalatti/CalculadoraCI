@@ -1,13 +1,13 @@
 package principal;
 
 import javax.swing.JOptionPane;
-import modelo.Calculadora;
+import modelo.calculadora;
 
 public class Principal {
 
     public static void main(String[] args) {
         String opcao = "";
-        Calculadora calculadora = new Calculadora();
+        calculadora calculadora = new calculadora();
         while (!opcao.equals("9")) {
             opcao = JOptionPane.showInputDialog("1 - Leitura \n2 - Adicao \n3 - Subtracao \n4 - Multiplicação \n5 - Divisao \n6 - Exponencial \n9 - Sair");
             switch (Integer.parseInt(opcao)) {
