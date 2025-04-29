@@ -1,6 +1,6 @@
 # CalculadoraCI
 ## Sobre o projeto:
-Esse projeto tem como objetivo utilizar integração continua para verificar se novas atualizações estão funcionando corretamente. 
+Esse projeto tem como objetivo utilizar integração continua para verificar se novas atualizações estão funcionando corretamentee com boa qualidade. 
  
 ## Tecnologias utilizadas:
 O projeto utiliza Java. \
