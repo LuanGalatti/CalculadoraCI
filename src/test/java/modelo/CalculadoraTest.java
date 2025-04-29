@@ -58,6 +58,30 @@ class CalculadoraTest {
         //Premissa verifica se os valores são iguais	
         assertEquals(retornoEsperado, retornoFeito);
     }
+    
+    @Test
+    void testProduto() {
+        //Instancia um objeto da classe Calculadora
+        Calculadora calculadora = new Calculadora(2.0, 2.0);
+        //Define o valor esperado para a operação
+        double retornoEsperado = 4.0;
+        //Chama a operacao getDivisao()
+        double retornoFeito = calculadora.getProduto();
+        //Premissa verifica se os valores são iguais	
+        assertEquals(retornoEsperado, retornoFeito);
+    }
+    
+        @Test
+    void testExponencial() {
+        //Instancia um objeto da classe Calculadora
+        Calculadora calculadora = new Calculadora(2.0, 3.0);
+        //Define o valor esperado para a operação
+        double retornoEsperado = 8.0;
+        //Chama a operacao getDivisao()
+        double retornoFeito = calculadora.getExponencial();
+        //Premissa verifica se os valores são iguais	
+        assertEquals(retornoEsperado, retornoFeito);
+    }
 
     @AfterAll
     public void finalizacao() {
