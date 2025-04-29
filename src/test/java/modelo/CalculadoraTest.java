@@ -9,11 +9,11 @@ import org.junit.jupiter.api.TestInstance;
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class CalculadoraTest {
 
-    calculadora instance;
+    Calculadora instance;
 
     @BeforeAll
     void inicializacao() {
-        instance = new calculadora(4.0, 2.0);
+        instance = new Calculadora(4.0, 2.0);
     }
 
     /**
@@ -21,7 +21,7 @@ class CalculadoraTest {
      */
     @Test
     void testGetSomaConstrutorVazio() {
-        calculadora calculadora = new calculadora();
+        Calculadora calculadora = new Calculadora();
         double expResult = 0.0;
         double result = calculadora.getSoma();
         assertEquals(expResult, result, 0);
@@ -46,11 +46,11 @@ class CalculadoraTest {
         double result = instance.getDiferenca();
         assertEquals(expResult, result, 0);
     }
-    
-        @Test
+
+    @Test
     void testGetDivisao() {
         //Instancia um objeto da classe Calculadora
-        calculadora calculadora = new calculadora(4.0, 2.0);
+        Calculadora calculadora = new Calculadora(4.0, 2.0);
         //Define o valor esperado para a operação
         double retornoEsperado = 2.0;
         //Chama a operacao getDivisao()
@@ -58,11 +58,11 @@ class CalculadoraTest {
         //Premissa verifica se os valores são iguais	
         assertEquals(retornoEsperado, retornoFeito);
     }
-    
+
     @Test
     void testProduto() {
         //Instancia um objeto da classe Calculadora
-        calculadora calculadora = new calculadora(2.0, 2.0);
+        Calculadora calculadora = new Calculadora(2.0, 2.0);
         //Define o valor esperado para a operação
         double retornoEsperado = 4.0;
         //Chama a operacao getDivisao()
@@ -70,11 +70,11 @@ class CalculadoraTest {
         //Premissa verifica se os valores são iguais	
         assertEquals(retornoEsperado, retornoFeito);
     }
-    
-        @Test
+
+    @Test
     void testExponencial() {
         //Instancia um objeto da classe Calculadora
-        calculadora calculadora = new calculadora(2.0, 3.0);
+        Calculadora calculadora = new Calculadora(2.0, 3.0);
         //Define o valor esperado para a operação
         double retornoEsperado = 8.0;
         //Chama a operacao getDivisao()
@@ -84,7 +84,7 @@ class CalculadoraTest {
     }
 
     @AfterAll
-    public void finalizacao() {
+    void finalizacao() {
         instance = null;
     }
 }

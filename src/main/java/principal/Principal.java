@@ -1,13 +1,13 @@
 package principal;
 
 import javax.swing.JOptionPane;
-import modelo.calculadora;
+import modelo.Calculadora;
 
 public class Principal {
 
     public static void main(String[] args) {
         String opcao = "";
-        calculadora calculadora = new calculadora();
+        Calculadora calculadora = new Calculadora();
         while (!opcao.equals("9")) {
             opcao = JOptionPane.showInputDialog("1 - Leitura \n2 - Adicao \n3 - Subtracao \n4 - Multiplicação \n5 - Divisao \n6 - Exponencial \n9 - Sair");
             switch (Integer.parseInt(opcao)) {
@@ -29,6 +29,8 @@ public class Principal {
                     break;
                 case 6:
                     JOptionPane.showMessageDialog(null, "Exponente: " + calculadora.getExponencial());
+                default:
+                    break;
             }
         }
     }
